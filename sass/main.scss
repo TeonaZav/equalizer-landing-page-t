@@ -1,0 +1,406 @@
+// COLORS:
+$main-background-white: #f2f2f2;
+$turquoise: #66e2dc;
+$dark-orange: #fa7453;
+$light-orange: #ffb964;
+$ivory-white: #fcfaf9;
+$main-black: #191826;
+//FONTS:
+$font-small: 1.6rem; // 16px
+$lh-small: 2.6rem; //26px
+$font-small2: 1.8rem; //18px
+$lh-small2: 2.8rem; //28px
+$font-medium: 2rem; //20px
+$lh-medium: 3.4rem; //34px
+$heading1-size: 8.8rem; //88px
+$lh-heading1: 8.8rem; //88px
+$heading2-size: 4rem; //40px
+$lh-heading2: 4.8rem; //48px
+$heading3-size: 3.2rem; //32px
+$lh-heading3: 4rem; //40px
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=IBM+Plex+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  background-color: $main-background-white;
+  background-image: url(../assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top -55vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.heading {
+  font-weight: 700;
+  color: $main-black;
+}
+
+.text {
+  color: $main-black;
+}
+
+/* more than 375PX (for phones )*/
+.header {
+  height: 62.2rem;
+  padding: 4rem 2.4rem 0rem 2.4rem;
+  margin-bottom: 6.8rem;
+  &__logo {
+    height: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 16.6rem;
+  }
+  &__heading-primary {
+    font-size: $heading2-size;
+    line-height: $lh-heading2;
+  }
+  &__text {
+    font-size: $font-small;
+    line-height: $lh-small;
+  }
+}
+.section-app {
+  &__image-box {
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 28rem 42rem;
+    border-radius: 1.2rem;
+    height: 60rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $main-black;
+
+    &__image {
+      width: 55.7%;
+      height: 43rem;
+      margin-top: -26vw;
+    }
+  }
+  &__text-btn-box {
+    background-color: $dark-orange;
+    width: 100%;
+    height: 54.6rem;
+    padding: 4.8rem 3.7rem 0rem 3.6rem;
+    color: $ivory-white;
+    margin-top: -22rem;
+    border-radius: 1.2rem;
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    & span {
+      font-size: 6.5rem;
+      line-height: 5.2rem;
+    }
+  }
+  &__heading-secondary {
+    font-size: $heading3-size;
+    line-height: $lh-heading3;
+    color: $ivory-white;
+  }
+  &__main-text,
+  &__price {
+    font-size: $font-small2;
+    line-height: $lh-small2;
+    color: $ivory-white;
+  }
+  &__main-text {
+    margin-bottom: 3.6rem;
+  }
+  &__price {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  height: 39.7rem;
+  width: 100vw;
+  padding: 6.4rem 2.4rem 0rem 2.4rem;
+  &__logo {
+    height: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+  &__text-box {
+    margin-bottom: 6.4rem;
+  }
+  &__text {
+    font-size: $font-small;
+    line-height: $lh-small;
+    &__email {
+      font-size: $font-small;
+      text-decoration: none;
+      font-weight: 700;
+      color: #191826;
+    }
+  }
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.btn-download {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 1.2rem;
+  font-family: inherit;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: $font-small2;
+  line-height: $lh-small2;
+  font-weight: 700;
+  &--ios {
+    background-color: $main-black;
+    color: $ivory-white;
+    padding: 1.5rem 7.7rem 1.4rem 7.7rem;
+  }
+  &--android {
+    background-color: $ivory-white;
+    color: $main-black;
+    padding: 1.5rem 5.9rem 1.4rem 5.75rem;
+  }
+  &__icon {
+    margin-right: 0.78rem;
+  }
+}
+
+/* more than 768PX (for tablet )*/
+@media (min-width: 48em) {
+  body {
+    background-image: url(../assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left -45vw top -30vw;
+  }
+  //header
+  .header {
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top -3.4rem right -3.1rem;
+    background-size: 26.67rem 40rem;
+    min-height: 77rem;
+    padding: 6.2rem 0rem 0rem 3.9rem;
+    &__logo {
+      margin-bottom: 9.5rem;
+    }
+    &__text-box {
+      width: 52rem;
+      gap: 2.8rem;
+    }
+    &__heading-primary {
+      font-size: 6.4rem;
+      line-height: 6.4rem;
+    }
+    &__text {
+      font-size: $font-small2;
+      line-height: $lh-small2;
+    }
+  }
+  .section-app {
+    &__image-box {
+      background-image: url(../assets/bg-pattern-2.svg);
+      background-position: bottom 21.3rem right 18.7rem;
+      justify-content: left;
+      width: auto;
+      min-height: 60rem;
+      margin: 0 3.9rem 0 3.3rem;
+      position: relative;
+      &__image {
+        width: 27rem;
+        height: 55.6rem;
+        margin-top: -13.8rem;
+        margin-left: 6.4rem;
+        z-index: 1;
+      }
+    }
+    &__text-btn-box {
+      height: 54.6rem;
+      width: 39.9rem;
+      padding: 4.8rem 4.9rem 0rem 4.8rem;
+      margin-top: -45rem;
+      left: 27.2rem;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+  .btn-container {
+    gap: 3rem;
+  }
+  .footer {
+    padding: 18.3rem 3.9rem 0rem 3.3rem;
+    width: 100vw;
+    height: 41.1rem;
+    &__text-box-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__text-box {
+      width: 36.6rem;
+    }
+    &__text {
+      font-size: $font-small;
+      line-height: $lh-small;
+      &__email {
+        font-size: $font-small;
+      }
+    }
+  }
+}
+
+/* more than 1440PX (for desktop )*/
+@media (min-width: 90em) {
+  body {
+    background-image: url(../assets/bg-main-desktop.png);
+    background-repeat: repeat-y;
+    background-position: right -10vw top -15vw;
+    background-size: auto;
+  }
+  //header
+  .header {
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-position: top -3.4rem right -3.1rem;
+    background-size: 31.2rem 46.8rem;
+    min-height: 86rem;
+    padding: 6.2rem 0rem 0rem 16.5rem;
+    &__logo {
+      margin-bottom: 12.7rem;
+    }
+    &__text-box {
+      width: 101.5rem;
+      gap: 4rem;
+    }
+    &__heading-primary {
+      font-size: $heading1-size;
+      line-height: $lh-heading1;
+    }
+    &__text {
+      width: 82.5rem;
+      font-size: $font-medium;
+      line-height: $lh-medium;
+    }
+  }
+  .section-app {
+    &__image-box {
+      background-image: url(../assets/bg-pattern-2.svg);
+      background-size: 31rem 47rem;
+      justify-content: left;
+      background-position: top -2.64vw left 22.5vw;
+
+      min-height: 60rem;
+      margin: 0 16.5rem 0 16.5rem;
+      position: relative;
+      &__image {
+        width: 30rem;
+        height: 62.9rem;
+        margin-top: -19.4rem;
+        margin-left: 10.2rem;
+        z-index: 1;
+      }
+    }
+    &__text-btn-box {
+      height: 62.5rem;
+      width: 44.6rem;
+      padding: 5.8rem 5.9rem 0rem 5.4rem;
+      margin-top: -51rem;
+      left: 73.4rem;
+      position: absolute;
+      z-index: 2;
+    }
+    &__text-box {
+      gap: 2.2rem;
+    }
+
+    &__main-text,
+    &__price {
+      font-size: $font-medium;
+      line-height: $lh-medium;
+    }
+    &__main-text {
+      margin-bottom: 3.9rem;
+    }
+    &__price {
+      margin-bottom: 4.6rem;
+    }
+  }
+  .btn-container {
+    gap: 1.6rem;
+  }
+  .footer {
+    padding: 14.03vw 11.46vw 6.32vw 11.46vw;
+    width: 100%;
+    height: 25.83vw;
+    &__container {
+      max-width: 144rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-self: top;
+    }
+    &__text-box-container {
+      flex-direction: row;
+      align-items: top;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__logo {
+      margin-right: 9.58vw;
+      margin-bottom: 0;
+    }
+
+    &__text-box {
+      width: 36.6rem;
+      height: 7.9rem;
+      margin: 0;
+    }
+    &__text {
+      font-size: $font-small;
+      line-height: $lh-small;
+      &__email {
+        font-size: $font-small;
+      }
+    }
+  }
+  .social-icon {
+    width: 1.39vw;
+  }
+  .icon-s:hover {
+    fill: #fa7453;
+  }
+  .btn-download {
+    &--ios:hover {
+      background-color: $turquoise;
+    }
+    &--android:hover {
+      background-color: $light-orange;
+    }
+  }
+}

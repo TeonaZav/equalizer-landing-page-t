@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=IBM+Plex+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  background-image: url(../assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top -55vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.heading {
+  font-weight: 700;
+  color: #191826; }
+
+.text {
+  color: #191826; }
+
+/* more than 375PX (for phones )*/
+.header {
+  height: 62.2rem;
+  padding: 4rem 2.4rem 0rem 2.4rem;
+  margin-bottom: 6.8rem; }
+  .header__logo {
+    height: 3.2rem;
+    margin-bottom: 6.4rem; }
+  .header__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 16.6rem; }
+  .header__heading-primary {
+    font-size: 4rem;
+    line-height: 4.8rem; }
+  .header__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+
+.section-app__image-box {
+  background-image: url(../assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 28rem 42rem;
+  border-radius: 1.2rem;
+  height: 60rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #191826; }
+  .section-app__image-box__image {
+    width: 55.7%;
+    height: 43rem;
+    margin-top: -26vw; }
+
+.section-app__text-btn-box {
+  background-color: #fa7453;
+  width: 100%;
+  height: 54.6rem;
+  padding: 4.8rem 3.7rem 0rem 3.6rem;
+  color: #fcfaf9;
+  margin-top: -22rem;
+  border-radius: 1.2rem; }
+
+.section-app__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; }
+  .section-app__text-box span {
+    font-size: 6.5rem;
+    line-height: 5.2rem; }
+
+.section-app__heading-secondary {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #fcfaf9; }
+
+.section-app__main-text, .section-app__price {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #fcfaf9; }
+
+.section-app__main-text {
+  margin-bottom: 3.6rem; }
+
+.section-app__price {
+  margin-bottom: 3.2rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 39.7rem;
+  width: 100vw;
+  padding: 6.4rem 2.4rem 0rem 2.4rem; }
+  .footer__logo {
+    height: 3.2rem;
+    margin-bottom: 3.2rem; }
+  .footer__text-box {
+    margin-bottom: 6.4rem; }
+  .footer__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
+    .footer__text__email {
+      font-size: 1.6rem;
+      text-decoration: none;
+      font-weight: 700;
+      color: #191826; }
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none; }
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem; }
+
+.btn-download {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 1.2rem;
+  font-family: inherit;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700; }
+  .btn-download--ios {
+    background-color: #191826;
+    color: #fcfaf9;
+    padding: 1.5rem 7.7rem 1.4rem 7.7rem; }
+  .btn-download--android {
+    background-color: #fcfaf9;
+    color: #191826;
+    padding: 1.5rem 5.9rem 1.4rem 5.75rem; }
+  .btn-download__icon {
+    margin-right: 0.78rem; }
+
+/* more than 768PX (for tablet )*/
+@media (min-width: 48em) {
+  body {
+    background-image: url(../assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left -45vw top -30vw; }
+  .header {
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top -3.4rem right -3.1rem;
+    background-size: 26.67rem 40rem;
+    min-height: 77rem;
+    padding: 6.2rem 0rem 0rem 3.9rem; }
+    .header__logo {
+      margin-bottom: 9.5rem; }
+    .header__text-box {
+      width: 52rem;
+      gap: 2.8rem; }
+    .header__heading-primary {
+      font-size: 6.4rem;
+      line-height: 6.4rem; }
+    .header__text {
+      font-size: 1.8rem;
+      line-height: 2.8rem; }
+  .section-app__image-box {
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-position: bottom 21.3rem right 18.7rem;
+    justify-content: left;
+    width: auto;
+    min-height: 60rem;
+    margin: 0 3.9rem 0 3.3rem;
+    position: relative; }
+    .section-app__image-box__image {
+      width: 27rem;
+      height: 55.6rem;
+      margin-top: -13.8rem;
+      margin-left: 6.4rem;
+      z-index: 1; }
+  .section-app__text-btn-box {
+    height: 54.6rem;
+    width: 39.9rem;
+    padding: 4.8rem 4.9rem 0rem 4.8rem;
+    margin-top: -45rem;
+    left: 27.2rem;
+    position: absolute;
+    z-index: 2; }
+  .btn-container {
+    gap: 3rem; }
+  .footer {
+    padding: 18.3rem 3.9rem 0rem 3.3rem;
+    width: 100vw;
+    height: 41.1rem; }
+    .footer__text-box-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .footer__text-box {
+      width: 36.6rem; }
+    .footer__text {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+      .footer__text__email {
+        font-size: 1.6rem; } }
+
+/* more than 1440PX (for desktop )*/
+@media (min-width: 90em) {
+  body {
+    background-image: url(../assets/bg-main-desktop.png);
+    background-repeat: repeat-y;
+    background-position: right -10vw top -15vw;
+    background-size: auto; }
+  .header {
+    background-image: url(../assets/bg-pattern-1.svg);
+    background-position: top -3.4rem right -3.1rem;
+    background-size: 31.2rem 46.8rem;
+    min-height: 86rem;
+    padding: 6.2rem 0rem 0rem 16.5rem; }
+    .header__logo {
+      margin-bottom: 12.7rem; }
+    .header__text-box {
+      width: 101.5rem;
+      gap: 4rem; }
+    .header__heading-primary {
+      font-size: 8.8rem;
+      line-height: 8.8rem; }
+    .header__text {
+      width: 82.5rem;
+      font-size: 2rem;
+      line-height: 3.4rem; }
+  .section-app__image-box {
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-size: 31rem 47rem;
+    justify-content: left;
+    background-position: top -2.64vw left 22.5vw;
+    min-height: 60rem;
+    margin: 0 16.5rem 0 16.5rem;
+    position: relative; }
+    .section-app__image-box__image {
+      width: 30rem;
+      height: 62.9rem;
+      margin-top: -19.4rem;
+      margin-left: 10.2rem;
+      z-index: 1; }
+  .section-app__text-btn-box {
+    height: 62.5rem;
+    width: 44.6rem;
+    padding: 5.8rem 5.9rem 0rem 5.4rem;
+    margin-top: -51rem;
+    left: 73.4rem;
+    position: absolute;
+    z-index: 2; }
+  .section-app__text-box {
+    gap: 2.2rem; }
+  .section-app__main-text, .section-app__price {
+    font-size: 2rem;
+    line-height: 3.4rem; }
+  .section-app__main-text {
+    margin-bottom: 3.9rem; }
+  .section-app__price {
+    margin-bottom: 4.6rem; }
+  .btn-container {
+    gap: 1.6rem; }
+  .footer {
+    padding: 14.03vw 11.46vw 6.32vw 11.46vw;
+    width: 100%;
+    height: 25.83vw; }
+    .footer__container {
+      max-width: 144rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-self: top; }
+    .footer__text-box-container {
+      flex-direction: row;
+      align-items: top;
+      justify-content: space-between;
+      width: 100%; }
+    .footer__logo {
+      margin-right: 9.58vw;
+      margin-bottom: 0; }
+    .footer__text-box {
+      width: 36.6rem;
+      height: 7.9rem;
+      margin: 0; }
+    .footer__text {
+      font-size: 1.6rem;
+      line-height: 2.6rem; }
+      .footer__text__email {
+        font-size: 1.6rem; }
+  .social-icon {
+    width: 1.39vw; }
+  .icon-s:hover {
+    fill: #fa7453; }
+  .btn-download--ios:hover {
+    background-color: #66e2dc; }
+  .btn-download--android:hover {
+    background-color: #ffb964; } }
